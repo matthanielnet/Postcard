@@ -13,6 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="dFF-zw-J6F"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jW9-eY-NMh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OhZ-gy-RnL">
@@ -60,6 +61,15 @@
                                     <action selector="sendMailButtonPressed:" destination="qKW-A3-oad" eventType="touchUpInside" id="GWv-Nz-0UW"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYj-Ag-UX6">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="134" width="183" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -69,6 +79,7 @@
                                 <exclude reference="pmX-5i-lzV"/>
                                 <exclude reference="N0b-Xl-o2Y"/>
                                 <exclude reference="pO8-Wn-k5E"/>
+                                <exclude reference="PYj-Ag-UX6"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -78,6 +89,7 @@
                                 <include reference="pmX-5i-lzV"/>
                                 <include reference="N0b-Xl-o2Y"/>
                                 <include reference="pO8-Wn-k5E"/>
+                                <include reference="PYj-Ag-UX6"/>
                             </mask>
                         </variation>
                     </view>
@@ -86,6 +98,7 @@
                         <outlet property="enterNameTextField" destination="RK0-yQ-ur0" id="Grs-I8-cIT"/>
                         <outlet property="mailButton" destination="pO8-Wn-k5E" id="zjJ-72-yoG"/>
                         <outlet property="messageLabel" destination="pmX-5i-lzV" id="fnA-Ny-9aj"/>
+                        <outlet property="nameLabel" destination="PYj-Ag-UX6" id="KcX-F9-UvL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="myg-Ot-3Z7" userLabel="First Responder" sceneMemberID="firstResponder"/>
